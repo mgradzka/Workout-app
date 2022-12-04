@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <the-header></the-header>
+  <panel-workout></panel-workout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHeader from "./components/layouts/TheHeader.vue";
+import PanelWorkout from './components/workouts/PanelWorkout.vue'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    TheHeader,
+    PanelWorkout
+  },
+ 
+ 
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
 }
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding: 2rem
+}
+
+body {
+  background-color: rgb(45, 45, 45);
+  color: rgb(208, 208, 208)
+}
+
+h1 {
+  text-align: center;
+  padding-bottom:2rem
+}
+
 </style>
