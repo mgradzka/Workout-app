@@ -1,4 +1,8 @@
 # workout-app
+An app that works as a workout noter, where Firebase is used as a backend. In the app, a user can add new workouts or delete existing ones. 
+
+## Technologies
+Vue.js, JavaScript, Firebase
 
 ## Project setup
 ```
